@@ -1,0 +1,9 @@
+name: Multiverse-Layers
+main: com.onarandombox.MultiverseLayers.MultiverseLayers
+author: main()
+version: maven-version-number
+depend: ['Multiverse-Core']
+commands:
+  mvl:
+    description: Generic Multiverse-Layers Command
+    usage: /<command>
