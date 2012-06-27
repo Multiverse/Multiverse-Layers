@@ -70,18 +70,6 @@ and adjust the build number accordingly -->
                     <target>1.6</target>
                 </configuration>
             </plugin>
-            <!-- Jar Plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>2.3.1</version>
-                <configuration>
-                    <archive>
-                        <manifestEntries>
-                        </manifestEntries>
-                    </archive>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>com.google.code.maven-replacer-plugin</groupId>
                 <artifactId>maven-replacer-plugin</artifactId>
@@ -102,6 +90,18 @@ and adjust the build number accordingly -->
                             <value>${project.version}-b${project.build.number}</value>
                         </replacement>
                     </replacements>
+                </configuration>
+            </plugin>
+            <!-- Jar Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.3.1</version>
+                <configuration>
+                    <archive>
+                        <manifestEntries>
+                        </manifestEntries>
+                    </archive>
                 </configuration>
             </plugin>
             <plugin>
