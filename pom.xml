@@ -147,6 +147,7 @@ and adjust the build number accordingly -->
             </plugin>
         </plugins>
     </build>
+
     <dependencies>
         <dependency>
     	    <groupId>com.onarandombox.multiversecore</groupId>
@@ -155,7 +156,22 @@ and adjust the build number accordingly -->
     	    <type>jar</type>
     	    <scope>compile</scope>
     	</dependency>
+        <dependency>
+            <groupId>me.main__.util</groupId>
+            <artifactId>SerializationConfig</artifactId>
+            <version>1.6b</version>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.pneumaticraft.commandhandler</groupId>
+            <artifactId>CommandHandler</artifactId>
+            <version>7</version>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
+
     <distributionManagement>
         <repository>
             <id>OnARandomBox</id>
