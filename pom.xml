@@ -163,13 +163,6 @@ and adjust the build number accordingly -->
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>com.pneumaticraft.commandhandler</groupId>
-            <artifactId>CommandHandler</artifactId>
-            <version>7</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
 
     <distributionManagement>

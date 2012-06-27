@@ -14,7 +14,7 @@ import org.bukkit.util.Vector;
 
 import com.onarandombox.MultiverseCore.api.MultiversePlugin;
 import com.onarandombox.MultiverseCore.api.MultiverseWorld;
-import com.pneumaticraft.commandhandler.CommandHandler;
+import com.pneumaticraft.commandhandler.multiverse.CommandHandler;
 
 public class MultiverseLayers extends MultiversePlugin {
     private List<Sandvich> lunch;
