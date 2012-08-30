@@ -46,12 +46,10 @@ public class MultiverseLayers extends MultiversePlugin {
         }
 
         if (lunch.isEmpty()) {
-            System.out.println("defaults");
             // add some defaults
             Sandvich s = new Sandvich();
             s.getFillings().add(this.getCore().getMVWorldManager().getFirstSpawnWorld().getName());
             this.lunch.add(s);
-            System.out.println("lunch is now " + lunch);
         }
 
         this.quickLookup = new HashMap<String, Sandvich>();
