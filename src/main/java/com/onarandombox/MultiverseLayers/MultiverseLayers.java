@@ -82,20 +82,22 @@ public class MultiverseLayers extends MultiversePlugin {
             Vector v = e.getPlayer().getVelocity();
             String worldName = e.getTo().getWorld().getName();
             Sandvich s = this.quickLookup.get(worldName);
-            int index = s.getFillings().indexOf(worldName);
-            if (y <= 0) {
-                y = e.getTo().getWorld().getMaxHeight();
-                index--; // fall down
-            } else {
-                y = 0;
-                index++; // go up
-            }
-            if ((index < 0) || (index >= s.getFillings().size()))
-                return;
+            if (s != null) {
+                int index = s.getFillings().indexOf(worldName);
+                if (y <= 0) {
+                    y = e.getTo().getWorld().getMaxHeight();
+                    index--; // fall down
+                } else {
+                    y = 0;
+                    index++; // go up
+                }
+                if ((index < 0) || (index >= s.getFillings().size()))
+                    return;
 
-            MultiverseWorld world = this.getCore().getMVWorldManager().getMVWorld(s.getFillings().get(index));
-            e.getPlayer().teleport(new Location(world.getCBWorld(), e.getTo().getX(), y, e.getTo().getZ()));
-            e.getPlayer().setVelocity(v);
+                MultiverseWorld world = this.getCore().getMVWorldManager().getMVWorld(s.getFillings().get(index));
+                e.getPlayer().teleport(new Location(world.getCBWorld(), e.getTo().getX(), y, e.getTo().getZ()));
+                e.getPlayer().setVelocity(v);
+            }
         }
     }
 }
